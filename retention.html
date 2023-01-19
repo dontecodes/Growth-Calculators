@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Retention Rate Calculator | Growth Calculators</title>
+    <meta name="description"
+        content="Retention rate represents the percentage of users who continue using your product over a given time period." />
+    <link rel="canonical" href="https://growthcalculators.com/retention">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Retention Rate Calculator | Growth Calculators">
+    <meta property="og:url" content="https://growthcalculators.com/retention">
+    <meta property="og:description"
+        content="Retention rate represents the percentage of users who continue using your product over a given time period.">
+    <meta property="og:image" content="https://growthcalculators.com/og-image.jpg" />
+    <meta property="og:image:width" content="2100" />
+    <meta property="og:image:height" content="1250" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX9HC0JYBQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EX9HC0JYBQ');
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-4 mb-2">
+                <a href="https://growthcalculators.com" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
+                    <img src="logo_white.png" width="170" height="45">
+                </a>
+            </header>
+        </div>
+        <div class="container py-4">
+
+            <div class="row col-lg-10 mx-auto g-5 mb-5" style="max-width: 864px;">
+                <div class="mb-4 text-center mmt-0">
+                    <div class="container-fluid text-white">
+                        <h1 class="display-5 fw-bold">Retention Rate Calculator</h1>
+                        <p class="fs-5">Calculate the percentage of users who continue using your product.</p>
+                    </div>
+                </div>
+                <div class="col-md-12" style="margin-bottom: -30px;">
+                    <div class="alert alert-info" role="alert">
+                        <i class="bi bi-exclamation-circle-fill text-warning"></i> This calculation
+                        is based on Range Retention. There are other ways to calculate retention, including
+                        Classic Retention and Rolling Retention.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-5 bg-light h-100 rounded-3">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label"># of users retained at the end of time period</label>
+                                <input type="number" class="form-control fig-1">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"># users at start of time period</label>
+                                <input type="number" class="form-control fig-2">
+                            </div>
+                            <button type="submit" style="width: 100%;"
+                                class="btn btn-primary calculate-btn px-4 py-3">Calculate</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light rounded-3">
+                        <div class="empty-box">
+                            <h2 class="fw-bold">Your calculation result will show up here.</h2>
+                            <h3 class="display-5 text-primary mb-3 result"></h3>
+                        </div>
+                        <div class="result-box">
+                            <h2 class="fw-bold">Your retention rate is:</h2>
+                            <h3 class="display-5 text-primary mb-3 result"></h3>
+                            <button class="btn btn-primary copy-btn px-4 py-3" data-copy-link=""><i
+                                    class="bi bi-clipboard"></i> Copy
+                                calculation link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-10 mx-auto g-5 mb-4" style="max-width: 864px;">
+                <div class="mb-4">
+                    <div class="h-100 p-5 bg-light rounded-3">
+                        <h2>What is retention rate?</h2>
+                        <p>Retention rate represents the percentage of users who continue using your product over a
+                            given time period. The higher your retention, the better. A higher retention rate indicates
+                            that your product is engaging and sticky. To calculate retention rate, divide the number of
+                            users retained at the end of a time period by the number of users at the start of a time
+                            period.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-10 mx-auto g-5 mb-4" style="max-width: 864px;">
+                <div class="mb-4">
+                    <div class="h-100 p-4 bg-light rounded-3 ">
+                        <a class="text-decoration-none" href="https://growthcalculators.com">
+                            <h5 class="mb-0"><i class="bi bi-arrow-left-circle-fill"></i> See additional calculators
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer mt-auto py-3 text-white">
+                <div class="container">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mb-4">
+                        <small>©
+                            <script>document.write(new Date().getFullYear())</script> Growth Calculators. All
+                            rights reserved.<br>Made by <i class="bi bi-twitter"></i> <a class="text-info fw-bold"
+                                href="https://twitter.com/donte_ll" style="text-decoration: none;"
+                                target="_blank">@donte_ll</a>
+                        </small>
+                        <img alt="Growth Calculators Logo" class="mb-2 d-flex" src="logo_white.png" width="125">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./scripts/rates.js"></script>
+</body>
+
+</html>

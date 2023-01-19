@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bungee', cursive;
+}
+
+p,
+label,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background: #030925;
+    background: -webkit-linear-gradient(top left, #030925, #232F80);
+    background: -moz-linear-gradient(top left, #030925, #232F80);
+    background: linear-gradient(to bottom right, #030925, #232F80);
+}
+
+.category-section {
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 4rem;
+    margin-bottom: 5rem !important;
+    background-color: white;
+}
+
+.py-xl {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.result-box {
+    display: none;
+}
+
+.ab_stats {
+    background: rgb(230, 230, 230);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.top-space {
+    top: 180px;
+    position: relative;
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+
+    .py-xl {
+        padding-top: 0rem !important;
+        padding-bottom: 6rem;
+    }
+
+    .category-section {
+        padding: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    footer small {
+        padding-bottom: 1rem !important;
+    }
+
+    .mmt-0 {
+        margin-top: 0 !important;
+    }
+
+    .top-space {
+        position: inherit !important;
+    }
+
+}
