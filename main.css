@@ -10,8 +10,9 @@ h5 {
 
 p,
 label,
-button {
-    font-family: 'Inter', sans-serif;
+button,
+.btn {
+    font-family: 'Inter', sans-serif !important;
 }
 
 main {
