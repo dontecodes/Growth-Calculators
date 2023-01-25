@@ -183,6 +183,15 @@
                     </div>
                     <div class="col d-flex align-items-start">
                         <div>
+                            <h3 class="fw-bold mb-0 fs-4">Break Even</h3>
+                            <p>Measure the break even point (BEP) for your business.</p>
+                            <a href="https://growthcalculators.com/break-even" class="btn btn-primary">
+                                Try it <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div>
                             <h3 class="fw-bold mb-0 fs-4">Burn Rate</h3>
                             <p>Measure how fast your business is spending its cash.</p>
                             <a href="https://growthcalculators.com/burn-rate" class="btn btn-primary">
@@ -264,6 +273,15 @@
                     </div>
                     <div class="col d-flex align-items-start">
                         <div>
+                            <h3 class="fw-bold mb-0 fs-4">Payment Fees</h3>
+                            <p>Calculate net revenue after payment platform fees.</p>
+                            <a href="https://growthcalculators.com/payment-fees" class="btn btn-primary">
+                                Try it <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div>
                             <h3 class="fw-bold mb-0 fs-4">Retention Rate</h3>
                             <p>Calculate the percentage of users who continue using your product.</p>
                             <a href="https://growthcalculators.com/retention" class="btn btn-primary">
@@ -300,6 +318,25 @@
                     </div>
                 </div>
             </div>
+            <div class="modal" tabindex="-1" id="newFeatures">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content p-4">
+                        <div class="modal-body pb-0">
+                            <h2><i class="bi bi-bell-fill text-primary"></i></h2>
+                            <h2 class="mb-4">New calculators added!</h2>
+                            <h5>Break Even Point <a href="https://growthcalculators.com/break-even"><i
+                                        class="bi bi-arrow-right-circle-fill"></i></a></h5>
+                            <p>Measure the break even point (BEP) for your business.</p>
+                            <h5>Payment Fees <a href="https://growthcalculators.com/payment-fees"><i
+                                        class="bi bi-arrow-right-circle-fill"></i></a></h5>
+                            <p>Calculate net revenue after payment platform fees.</p>
+                        </div>
+                        <div class="modal-footer border-top-0 pt-0" style="display: block;">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer class="footer mt-auto py-3 text-white">
                 <div class="container">
                     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mb-4">
@@ -318,6 +355,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            const jan24 = 1674609124246
+            const expire = jan24 + 432000000
+
+            if (Date.now() >= expire || localStorage.getItem("newFeatures") == "Viewed") { }
+            else {
+                $('#newFeatures').modal('show');
+                localStorage.setItem("newFeatures", "Viewed");
+            };
+
+        });
+    </script>
 </body>
 
 </html>

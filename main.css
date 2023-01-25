@@ -50,6 +50,17 @@ main {
     position: relative;
 }
 
+.top-space-fees {
+    top: 110px;
+    position: relative;
+}
+
+.fee-table {
+    padding: 2rem;
+    margin-top: 3rem;
+    background: beige;
+}
+
 /* Mobile */
 @media screen and (max-width: 500px) {
 
@@ -71,7 +82,8 @@ main {
         margin-top: 0 !important;
     }
 
-    .top-space {
+    .top-space,
+    .top-space-fees {
         position: inherit !important;
     }
 
